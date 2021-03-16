@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button onclick="gamedoanso()">Nhấn để chơi</button>
+<script>
+    function gamedoanso(){
+        let aa = +prompt("hãy nhập số : ");
+        let i ;
+        let num ;
+        for(i=0 ; i<5 ; i++){
+            num += i ;
+            if (aa === num ){
+                alert('bạn đã đúng')
+            }
+            else{
+                alert('bạn đã sai')
+            }
+        }
+
+    }
+</script>
+
+</body>
+</html>

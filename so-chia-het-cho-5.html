@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    function fibonacci(num){
+        let a=1 , b=0 , temp ;
+        while(num >= 0){
+            temp = a ;
+            a = a + b ;
+            b = temp ;
+            num-- ;
+   if(b % 5 === 0 ){
+       alert(b)
+       break ;
+   }
+        }
+            return b;
+    }
+
+    window.onload = fibonacci(20);
+
+</script>
+
+</body>
+</html>

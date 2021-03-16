@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function fibonacci(num){
+        let a=1 , b=0  ,tong=0;
+        while(num >= 0){
+
+            let temp = a ;
+            a = a + b ;
+            b = temp ;
+            tong = tong +b;
+            num-- ;
+
+        }
+        document.write("tong 20 so trong day fibonacci la : " + tong )
+
+        // return b;
+    }
+    window.onload = fibonacci(20);
+
+</script>
+</body>
+</html>
