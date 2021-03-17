@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>in ra số trong dãy fibobacci</div>
+<input type="number" id="aaa" />
+<button onclick="tinh()">ket qua</button>
+<div id="dd"></div>
+
+<script>
+    function fibonacci(num){
+        let a=1 , b=0 , temp ;
+        while(num >= 0){
+            temp = a ;
+            a = a + b ;
+            b = temp ;
+            num-- ;
+            document.write(b + "<br>")
+        }
+
+        return b;
+    }
+    function tinh(){
+
+        let ww = document.getElementById("aaa").value;
+        let q = fibonacci(ww)
+        document.getElementById("dd").innerHTML ="ket qua : " + q
+
+    }
+    window.onload = fibonacci(num);
+</script>
+</body>
+</html>
